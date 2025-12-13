@@ -30,27 +30,26 @@ Standalone tools that solve real friction in AI development and scientific compu
 | 13 | molsim | CLI | Chemistry |
 | 14 | xrdmatch | CLI | Materials |
 | 15 | vasp2qe | CLI | Materials/DFT |
-| 16 | plotextract | CLI | Scientific Data |
-| 17 | synthparse | CLI | Chemistry |
-| 18 | jupyckpt | Jupyter Extension | ML |
-| 19 | chemstock | CLI | Lab |
-| 20 | ragchunk | CLI | LLM |
-| 21 | arxiv-plus | Browser Extension | ML |
-| 22 | gpu-fleet | Desktop App | ML/HPC |
-| 23 | run-compare | Web App | ML |
-| 24 | slurm-insights | Web Dashboard | HPC |
-| 25 | structure-view | Web App | Materials |
-| 26 | tensor-shapes | VS Code Extension | ML |
-| 27 | hpc-skeleton | Code Generator | HPC |
-| 28 | queue-bot | Slack/Discord Bot | HPC |
-| 29 | mol-hover | Browser Extension | Chemistry |
-| 30 | spec-annotate | Web App | Chemistry |
-| 31 | grove | CLI | Dev Tooling |
-| 32 | cite-fetch | CLI | Scientific Writing |
-| 33 | env-diff | CLI | ML/Python |
-| 34 | traceback-buddy | Web App | Python |
-| 35 | notebook-clean | CLI | ML/Python |
-| 36 | param-sweep | CLI/Web | ML |
+| 16 | synthparse | CLI | Chemistry |
+| 17 | jupyckpt | Jupyter Extension | ML |
+| 18 | chemstock | CLI | Lab |
+| 19 | ragchunk | CLI | LLM |
+| 20 | arxiv-plus | Browser Extension | ML |
+| 21 | gpu-fleet | Desktop App | ML/HPC |
+| 22 | run-compare | Web App | ML |
+| 23 | slurm-insights | Web Dashboard | HPC |
+| 24 | structure-view | Web App | Materials |
+| 25 | tensor-shapes | VS Code Extension | ML |
+| 26 | hpc-skeleton | Code Generator | HPC |
+| 27 | queue-bot | Slack/Discord Bot | HPC |
+| 28 | mol-hover | Browser Extension | Chemistry |
+| 29 | spec-annotate | Web App | Chemistry |
+| 30 | grove | CLI | Dev Tooling |
+| 31 | cite-fetch | CLI | Scientific Writing |
+| 32 | env-diff | CLI | ML/Python |
+| 33 | traceback-buddy | Web App | Python |
+| 34 | notebook-clean | CLI | ML/Python |
+| 35 | param-sweep | CLI/Web | ML |
 
 ---
 
@@ -176,15 +175,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 16. plotextract
-
-**The problem:** Papers show data as figures, not tables. You want to compare your results to published data, but the only source is a PNG of a plot.
-
-**The solution:** A figure data extractor. `plotextract figure.png` uses computer vision to detect axes, extract data points, and output CSV. Interactive mode lets you click to define axis bounds. `plotextract --batch figures/` processes a directory. Handles scatter plots, line plots, and bar charts.
-
----
-
-### 17. synthparse
+### 16. synthparse
 
 **The problem:** Synthesis procedures are buried in paper methods sections as prose. Extracting temperatures, times, and quantities for your own use is manual and error-prone.
 
@@ -192,7 +183,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 18. jupyckpt
+### 17. jupyckpt
 
 **The problem:** Jupyter kernel crashes and you lose hours of computed state. Large DataFrames, trained models, processed data—all gone.
 
@@ -200,7 +191,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 19. chemstock
+### 18. chemstock
 
 **The problem:** Lab reagent inventory lives in unmaintained spreadsheets. "Do we have sodium hydroxide? Where? Is it expired?" requires asking around.
 
@@ -208,7 +199,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 20. ragchunk
+### 19. ragchunk
 
 **The problem:** Every RAG project starts with "how should I chunk these documents?" You experiment with sizes, overlap, and splitting strategies from scratch each time.
 
@@ -216,7 +207,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 21. arxiv-plus (Browser Extension)
+### 20. arxiv-plus (Browser Extension)
 
 **The problem:** ArXiv paper pages are bare-bones. You constantly open new tabs to find the code repo, check citations, see if there's a blog post, or find the OpenReview discussion.
 
@@ -224,7 +215,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 22. gpu-fleet (Menubar App)
+### 21. gpu-fleet (Menubar App)
 
 **The problem:** You have access to multiple machines with GPUs (lab servers, cloud instances, your desktop). Checking what's available requires SSH-ing into each one and running `nvidia-smi`.
 
@@ -232,7 +223,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 23. run-compare (Web App)
+### 22. run-compare (Web App)
 
 **The problem:** Comparing ML experiment runs means flipping between TensorBoard tabs, or exporting CSVs and making plots manually. Side-by-side comparison of specific runs is tedious.
 
@@ -240,7 +231,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 24. slurm-insights (Web Dashboard)
+### 23. slurm-insights (Web Dashboard)
 
 **The problem:** You request 32GB RAM and 8 hours for every job because you don't know what you actually need. Your jobs wait in queue forever because you're over-requesting resources.
 
@@ -248,7 +239,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 25. structure-view (Web App)
+### 24. structure-view (Web App)
 
 **The problem:** Visualizing crystal structures requires installing VESTA or other desktop software. Quickly checking a CIF file means downloading it, opening an app, and waiting for it to load.
 
@@ -256,7 +247,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 26. tensor-shapes (VS Code Extension)
+### 25. tensor-shapes (VS Code Extension)
 
 **The problem:** Tensor shape errors are the most common bugs in ML code. You stare at `x = model(x)` and have no idea what shape `x` is without adding print statements and re-running.
 
@@ -264,7 +255,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 27. hpc-skeleton (Code Generator)
+### 26. hpc-skeleton (Code Generator)
 
 **The problem:** Every HPC job needs boilerplate: Slurm headers, environment setup, checkpoint handling, logging configuration, signal handling for preemption. You copy-paste from old scripts and hope it still works.
 
@@ -272,7 +263,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 28. queue-bot (Slack/Discord Bot)
+### 27. queue-bot (Slack/Discord Bot)
 
 **The problem:** You submit a job, then compulsively check `squeue` every 10 minutes. You want to know when jobs finish, fail, or finally start running—without manual monitoring.
 
@@ -280,7 +271,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 29. mol-hover (Browser Extension)
+### 28. mol-hover (Browser Extension)
 
 **The problem:** Chemistry papers are full of SMILES strings and IUPAC names. You encounter `CC(=O)Oc1ccccc1C(=O)O` and have no idea what molecule it is without leaving the page.
 
@@ -288,7 +279,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 30. spec-annotate (Web App)
+### 29. spec-annotate (Web App)
 
 **The problem:** Annotating spectroscopy data (NMR, IR, MS, XRD) for group meetings or papers means screenshotting, importing to PowerPoint, and adding arrows manually. Collaboration means emailing files back and forth.
 
@@ -296,15 +287,17 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 31. grove
+### 30. grove
 
 **The problem:** Modern development often requires working on multiple branches simultaneously—reviewing a PR while fixing a bug, comparing implementations, or running parallel AI coding sessions. Git worktrees solve this, but for JS/TS projects they're painful: each worktree needs its own `node_modules`, meaning slow installs, gigabytes of duplication, and losing your editor/AI tool configs.
 
 **The solution:** A git worktree manager with smart dependency handling. `grove create feature-x` creates a worktree with shared `node_modules` (via pnpm store or symlinks when lockfiles match). Automatically copies `.claude/`, `.cursor/`, `.vscode/`, and other tool configs. `grove list` shows all worktrees with their branches and status. `grove serve feature-x --port 3001` runs dev servers on different ports. First-class support for Claude Code, Cursor, and other AI tools.
 
+**Solved:** [grove](https://github.com/blaiszik/grove) by [@blaiszik](https://github.com/blaiszik)
+
 ---
 
-### 32. cite-fetch
+### 31. cite-fetch
 
 **The problem:** You have a DOI and need a citation. BibTeX for your paper, APA for a report, or just a clean text reference. Each format requires a different website or tool, copy-pasting, and manual cleanup.
 
@@ -312,7 +305,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 33. env-diff
+### 32. env-diff
 
 **The problem:** "It works on my machine." You and a collaborator have different Python environments and something breaks. Figuring out which package version differs means manually comparing `pip freeze` outputs.
 
@@ -320,7 +313,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 34. traceback-buddy (Web App)
+### 33. traceback-buddy (Web App)
 
 **The problem:** Python tracebacks are intimidating, especially for complex ML frameworks. You get 50 lines of JAX internals and have no idea what you actually did wrong. Stack Overflow requires translating your error into searchable terms.
 
@@ -328,7 +321,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 35. notebook-clean
+### 34. notebook-clean
 
 **The problem:** Jupyter notebooks grow into 2000-line monsters. Functions that should be importable modules are trapped in cells. Refactoring is manual, tedious, and breaks execution order.
 
@@ -336,7 +329,7 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ---
 
-### 36. param-sweep
+### 35. param-sweep
 
 **The problem:** Running hyperparameter sweeps means writing scripts to generate all config combinations, naming output directories consistently, and tracking which runs you've completed. You rewrite this boilerplate for every project.
 
@@ -346,10 +339,9 @@ Standalone tools that solve real friction in AI development and scientific compu
 
 ## Solved Papercuts
 
-### 31. grove
-A git worktree manager with smart dependency handling, designed for AI-assisted development workflows.
-
-**Solution:** [grove](https://github.com/anthropics/grove) by [@anthropics](https://github.com/anthropics)
+| # | Name | Author | Repo |
+|---|------|--------|------|
+| 30 | grove | [@blaiszik](https://github.com/blaiszik) | [grove](https://github.com/blaiszik/grove) |
 
 ---
 
